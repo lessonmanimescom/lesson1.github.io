@@ -26,8 +26,8 @@
 						</div>
 						<div class="content">
 							<div class="inner">
-								<h1>Орчуулагчын сургууль</h1>
-								<p>Та энд анимэ орчуулгийн талаар мэдэх хэрэгтэй бүхийл зүйлээ сурах болно. 
+								<h1>Контент админуудын сургууль</h1>
+								<p>Та энд Контент админы талаар мэдэх хэрэгтэй бүхийл зүйлээ энд сурах болно. 
 									<br><i class="fas fa-headphones"></i>Чихэвчээ зүүгээд хичээлээ эхлээрэй.
 								</p>
 							</div>
@@ -86,22 +86,23 @@
 							  </p>
 								<center>
 								<a href="#lesson2" class="button">Буцах</a>
-								<a onclick="playKid()" href="#lesson4" class="button">Үргэлжлүүлэх</a>
-									<audio id="myVideo" controls style="display: none">
-  <source src="assets/music.mp3" type="audio/mp3">
-</audio>
-						<script>
-var kid = document.getElementById("myVideo"); 
+								<a onclick="playSid();" href="#lesson4" class="button">Үргэлжлүүлэх</a>
+								<audio id="mySideo" controls style="display: none">
+								    <source src="assets/aeons.mp3" type="audio/mp3">
+							      </audio>
+								  <script>
+var vid = document.getElementById("mySideo"); 
 
-function playKid() { 
-  return kid.paused ? kid.play() : kid.pause();
+function playSid() { 
+  return vid.paused ? vid.play() : vid.pause();
 } 
-</script>
+                                  </script>
+									
 								</center>
 							</article>
 
 						<!-- Contact -->
-							<article id="lesson4">
+							<article id="lesson6">
 							  <h2 class="major">Өрлөг</h2>
 							  <p style="margin-top: -50px;">Контент админууд, энкодлогчид</p>
 								<span class="image main"><img src="images/urlug.jpg" alt="" /></span>
@@ -117,21 +118,11 @@ function playKid() {
 								</ul>
 							  </p>
 								<center>
-								  <a href="#lesson3" class="button">Буцах</a>
-								  <a onclick="playSid();playKid();"  href="#lesson5" class="button">Үргэлжлүүлэх</a>
-								  <audio id="mySideo" controls style="display: none">
-								    <source src="assets/aeons.mp3" type="audio/mp3">
-							      </audio>
-								  <script>
-var vid = document.getElementById("mySideo"); 
-
-function playSid() { 
-  return vid.paused ? vid.play() : vid.pause();
-} 
-                                  </script>
+								  <a href="#lesson5" class="button">Буцах</a>
+								  <a href="#exam1" class="button">Шалгалт</a>
 								  </center>
 							</article>
-							<article id="lesson6">
+							<article id="lesson5">
 								<h2 class="major">Бичээч</h2>
 								<p style="margin-top: -50px;">Орчуулагч, цаг тааруулагчид</p>
 								<span class="image main"><img src="images/violet.gif" alt="" /></span>
@@ -148,11 +139,21 @@ function playSid() {
 								</ul>
 								</p>
 								<center>
-								<a href="#lesson5" class="button">Буцах</a>
-								<a href="#exam1" class="button">Орчуулагчын сургуулийг эхлүүлэх</a>
+								<a href="#lesson4" class="button">Буцах</a>
+								<a href="#lesson6" onclick="playKid();playBid();" class="button">Үргэлжлүүлэх</a>
+								<audio id="myVideo" controls style="display: none">
+  <source src="assets/music.mp3" type="audio/mp3">
+</audio>
+						<script>
+var kid = document.getElementById("myVideo"); 
+
+function playKid() { 
+  return kid.paused ? kid.play() : kid.pause();
+} 
+</script>
 								</center>
 							</article>
-							<article id="lesson5">
+							<article id="lesson4">
 								<h2 class="major">Дархад</h2>
 								<p style="margin-top: -50px;">Веб хөгжүүлэгчид, график дизайнарууд</p>
 								<span class="image main"><img src="images/giphyd.gif" alt="" /></span>
@@ -167,8 +168,8 @@ function playSid() {
 								</ul>
 								</p>
 								<center>
-								<a href="#lesson4" class="button">Буцах</a>
-								<a onclick="playSid();playBid();" href="#lesson6" class="button">Үргэлжлүүлэх</a>
+								<a href="#lesson3" class="button">Буцах</a>
+								<a onclick="playSid();playBid();" href="#lesson5" class="button">Үргэлжлүүлэх</a>
 								<audio id="myBideo" controls style="display: none">
   <source src="assets/eternity.mp3" type="audio/mp3">
 </audio>
